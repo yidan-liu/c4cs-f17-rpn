@@ -30,13 +30,12 @@ def calculate(myarg):
             arg1 = stack.pop()
             result = function(arg1, arg2)
             stack.append(result)
-        # print(stack)
     if len(stack) != 1:
         raise TypeError("Too many parameters")
     return stack.pop()
 
 def main():
-    while True:
+    while True: # pragma: no cover
         result = calculate(input("rpn calc> "))
         print("Result: ")
         print (Back.BLUE + Fore.YELLOW + str(result))
