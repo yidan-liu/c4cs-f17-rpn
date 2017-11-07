@@ -2,17 +2,18 @@
 
 import operator
 
-
 operators = {
     '+': operator.add,
     '-': operator.sub,
     '*': operator.mul,
     '/': operator.truediv,
-    '^': operator.pow,
-    '%': operator.mod
+    '^': operator.pow
 }
 
 def calculate(myarg):
+    # extra code to demo coverage drop
+    # if not myarg:
+    #     raise TypeError("No input")
     stack = list()
     for token in myarg.split():
         try:

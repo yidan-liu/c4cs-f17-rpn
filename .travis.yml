@@ -6,6 +6,6 @@ before_script:
 - pip install coveralls
 script:
 - python3 -m unittest
-- coverage run test_rpn.py&& coverage report -m rpn.py
+- coverage run -m unittest discover && coverage report -m
 after_success:
 - coveralls
