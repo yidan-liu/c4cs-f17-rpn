@@ -4,6 +4,7 @@ python:
 before_script:
 - pip install coverage
 - pip install coveralls
+- pip install colorama
 script:
 - python3 -m unittest
 - coverage run -m unittest discover && coverage report -m
