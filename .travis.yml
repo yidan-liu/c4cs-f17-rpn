@@ -3,3 +3,5 @@ python:
 - "3.5"
 script:
 - python3 -m unittest
+- coverage run test_rpn.py&& coverage report -m rpn.py
+
